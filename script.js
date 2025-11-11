@@ -1,5 +1,5 @@
-var initialPath = `M 0 25 Q 95 25 1100 25`;
-var finalPath = `M 0 25 Q 95 25 1100 25`;
+var initialPath = `M 110 25 Q 660 25 1430 25`;
+var finalPath = `M 110 25 Q 660 25 1430 25`;
 
 let line = document.querySelector("#line");
 
@@ -11,7 +11,7 @@ line.addEventListener("mousemove", function (e) {
   const y = e.clientY - rect.top;
 
  
-  const dynamicPath = `M 0 25 Q ${x} ${y} 1100 25`;
+  const dynamicPath = `M 110 25 Q ${x} ${y} 1430 25`;
 
   gsap.to("svg path", {
     attr: { d: dynamicPath },
@@ -22,7 +22,7 @@ line.addEventListener("mousemove", function (e) {
 
 line.addEventListener("mouseout", function () {
   gsap.to("svg path", {
-    attr: { d: finalPath },
+    attr: { d: initialPath },
     duration: 1.2,
     ease: "elastic.out(1, 0.1)",
   });

@@ -524,8 +524,8 @@ div button{
 #line{
     width: 100vw;
     height: 50px;
-    padding-left: 250px;
-    padding-right: 300px;
+    /* padding-left: 250px;
+    padding-right: 300px; */
   
    display: flex;
    align-items: center;
@@ -533,7 +533,8 @@ div button{
 }
 #line svg{
     height: 50px;
-    width: calc(100vw - 550px);
+    width: calc(100vw);
+    overflow: visible;
     
 
 }
