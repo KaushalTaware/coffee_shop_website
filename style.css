@@ -61,7 +61,7 @@ body{
     font-weight: 600;
 }
 
-#navright button{
+#btn0{
     width: 120px;
     height: 44px;
     border-radius: 10px;
@@ -71,11 +71,13 @@ body{
     cursor: pointer;
 }
 
-#navright button:hover{
+
+
+/* #navright button:hover{
     background-color: #EDD2B4;
     border: 2px solid #503D3A;
     color: #503D3A;
-}
+} */
 
 
 #main{
@@ -131,11 +133,11 @@ body{
     cursor: pointer;
 }
 
-#btn1:hover{
+/* #btn1:hover{
      background-color: #EDD2B4;
     border: 2px solid #503D3A;
     color: #503D3A;
-}
+} */
 
 #btn2{
      width: 140px;
@@ -487,11 +489,7 @@ div button{
     cursor: pointer;
 }
 
-div button:hover{
-    background-color: #252324;
-    color: #EDD2B4;
-    border: 1px solid #EDD2B4;
-}
+
 #terms{
     height: 70px;
     width: 100%;
@@ -557,4 +555,8 @@ div button:hover{
 }
 #copy h6 strong{
     cursor: pointer;
+}
+
+button:active{
+scale: 95%;
 }
